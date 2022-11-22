@@ -2,7 +2,11 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+<<<<<<< HEAD
       <module fileurl="file://$PROJECT_DIR$/converter.iml" filepath="$PROJECT_DIR$/converter.iml" />
+=======
+      <module fileurl="file://$PROJECT_DIR$/ConverterProjectWeek1.iml" filepath="$PROJECT_DIR$/ConverterProjectWeek1.iml" />
+>>>>>>> 88e466b (First commit)
     </modules>
   </component>
 </project>
