@@ -3,7 +3,6 @@ public class ConverterMass {
 
         System.out.println("here we need to write our methods");
     }
-l
     public static double convertOzToGrams(double Ounce) {
 
         return (double) (Ounce * 28.34952);
