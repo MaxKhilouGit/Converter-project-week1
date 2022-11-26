@@ -1,21 +1,20 @@
 import java.util.Scanner;
-class Converter{
+class poundsTo{
     double pounds = 0.0, ounces = 0.0, kilograms = 0.0, grams = 0.0;
     int uOption;
-    // String variables for the results to send back to MainConverterMass
     String poundsStr = " pounds ", ouncesStr = " ounces ", kilosStr = " kilograms ", gramsStr = " grams ";
     String poundStr = " pound ", ounceStr = " ounce ", kiloStr = " kilogram ", gramStr = " gram ";
     String equals = "is equal to ";
     String result;
 
-    Converter(){
-        System.out.println("Welcome to the Mass Converter by JavaLinks!"); //General Intro
+    poundsTo(){
+        System.out.println("Welcome to the Mass Converter by JavaLinks!");
     }
     //================================
-    Converter(Scanner sc){
+    poundsTo(Scanner sc){
         System.out.println("Enter measurement to convert it into: 1. ounces; 2. kilograms; 3. grams");
         uOption = sc.nextInt();
-        //user options direct to appropriate methods
+        //
         switch(uOption){
             case 1: poundsToOz(sc);break;
             case 2: poundsToKG(sc);break;
@@ -28,7 +27,6 @@ class Converter{
         System.out.println("Enter amount of pounds:");
         pounds = sc.nextDouble();
         ounces = pounds * 16.0;
-
         if(pounds == 1) {
             result = pounds + poundStr + equals + ounces + ouncesStr + ".";
         }else{
