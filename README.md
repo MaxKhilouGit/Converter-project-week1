@@ -22,7 +22,7 @@ DevX Week 11 Sprint submission
 Alime Abiieva, Andrei Ciuperca, Andrii Parashchuk, Andriy Dragushchak, Ariel, Arsen Nytka, Baiat Makeshov, Daniel Defoe, Elena Shagdurova, Francis Djounda, Joshua Benjamin, Kankyei, Max Khilou, Sanii Kamirdinova, Sergey Nadykto
 
 ### Associated Github User Accounts 
-AbiievaAlime, BaiatM, jbenj-upenn, MaxKhilouGit, SaniiaK
+AbiievaAlime, BaiatM, jbenj-upenn, MaxKhilouGit, SaniiaK, AndriiParashchuk,
 
 ### Screenshot of Output
 ![image](https://user-images.githubusercontent.com/59940368/204094036-f96ad2a7-bd60-4d6c-b03b-9d28d0bf9c55.png)
