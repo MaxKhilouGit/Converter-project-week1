@@ -4,7 +4,8 @@ public class MainConverterMass {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         int again = 0, uOption;
-        poundsTo conv = new poundsTo();
+        System.out.println("Welcome to the Mass Converter by JavaLinks!");
+        System.out.println("#########################");
         do {
             System.out.println("Enter measurement to convert: 1. pounds; 2. ounces; 3. kilograms; 4. grams");
             uOption = sc.nextInt();
