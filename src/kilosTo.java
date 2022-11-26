@@ -1,16 +1,6 @@
 import java.util.Scanner;
 
-class kilosTo{
-    double pounds = 0.0, ounces = 0.0, kilograms = 0.0, grams = 0.0;
-    int uOption;
-    String poundsStr = " pounds ", ouncesStr = " ounces ", kilosStr = " kilograms ", gramsStr = " grams ";
-    String poundStr = " pound ", ounceStr = " ounce ", kiloStr = " kilogram ", gramStr = " gram ";
-    String equals = "is equal to ";
-    String result;
-
-    kilosTo(){
-        System.out.println("Welcome to the Mass Converter by JavaLinks!");
-    }
+class kilosTo extends convert{
     kilosTo(Scanner sc){
         System.out.println("Enter measurement to convert it into: 1. pounds; 2. grams; 3. ounces");
         uOption = sc.nextInt();
