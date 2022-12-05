@@ -1,60 +1,60 @@
-package Test;
+package TestSprint1;
 
 import org.junit.Assert;
 import org.junit.Test;
 
-public class PoundsTest {
-    // 1.positive number converting to kg/gr/ounces /done/
-    // 3.negative numbers converting to kg/gr/ounces /done/
-    // 4.number zero converting to kg/gr/ounces /done/
+public class OuncesTest {
+    // 1.positive number converting to kg/gr/pounds /done/
+    // 3.negative numbers converting to kg/gr/pounds /done/
+    // 4.number zero converting to kg/gr/pounds /done/
 
     @Test
     public void verifyPositiveNumberToKg(){
-        double expectedResult = 4.53592;
+        double expectedResult = 0.283495;
         double a = 10;
-        double actualResult = a*0.453592;
+        double actualResult = a*0.0283495;
         String message = "expected = "+ expectedResult + " : Actual = "+actualResult;
         Assert.assertTrue(message, expectedResult==actualResult);
     }
     @Test
     public void verifyPositiveNumberToGr(){
-        double expectedResult = 4535.92;
+        double expectedResult = 283.49519999999995;
         double a = 10;
-        double actualResult = a*453.592;
+        double actualResult = a*28.34952;
         String message = "expected = "+ expectedResult + " : Actual = "+actualResult;
         Assert.assertTrue(message, expectedResult==actualResult);
     }
     //pounds = grams * 0.00220462;
     @Test
-    public void verifyPositiveNumberToOz(){
-        double expectedResult = 160;
+    public void verifyPositiveNumberToPounds(){
+        double expectedResult = 0.625;
         double a = 10;
-        double actualResult = a*16.0;
+        double actualResult = a*0.0625;
         String message = "expected = "+ expectedResult + " : Actual = "+actualResult;
         Assert.assertTrue(message, expectedResult==actualResult);
     }
     @Test
     public void verifyNegativeNumberToKg(){
-        double expectedResult = -4.53592;
+        double expectedResult = -0.283495;
         double a = -10;
-        double actualResult = a*0.453592;
+        double actualResult = a*0.0283495;
         String message = "expected = "+ expectedResult + " : Actual = "+actualResult;
         Assert.assertTrue(message, expectedResult==actualResult);
     }
     @Test
     public void verifyNegativeNumberToGr(){
-        double expectedResult = -4535.92;
+        double expectedResult = -283.49519999999995;
         double a = -10;
-        double actualResult = a*453.592;
+        double actualResult = a*28.34952;
         String message = "expected = "+ expectedResult + " : Actual = "+actualResult;
         Assert.assertTrue(message, expectedResult==actualResult);
     }
     //pounds = grams * 0.00220462;
     @Test
-    public void verifyNegativeNumberToOz(){
-        double expectedResult = -160;
+    public void verifyNegativeNumberToPounds(){
+        double expectedResult = -0.625;
         double a = -10;
-        double actualResult = a*16.0;
+        double actualResult = a*0.0625;
         String message = "expected = "+ expectedResult + " : Actual = "+actualResult;
         Assert.assertTrue(message, expectedResult==actualResult);
     }
@@ -63,7 +63,7 @@ public class PoundsTest {
     public void verifyZeroToKg() {
         int expectedResult = 0;
         int a = 0;
-        double actualResult = 0.453592/a;
+        double actualResult = 0.0283495/a;
         String message = "expected=" + expectedResult + " : Actual=" + actualResult;
         Assert.assertTrue(message, expectedResult == actualResult);
     }
@@ -72,16 +72,16 @@ public class PoundsTest {
     public void verifyZeroToGr() {
         int expectedResult = 0;
         int a = 0;
-        double actualResult = 453.592/a;
+        double actualResult = 28.34952/a;
         String message = "expected=" + expectedResult + " : Actual=" + actualResult;
         Assert.assertTrue(message, expectedResult == actualResult);
     }
 
     @Test (expected = AssertionError.class)
-    public void verifyZeroToOz() {
+    public void verifyZeroToPound() {
         int expectedResult = 0;
         int a = 0;
-        double actualResult = 16.0 /a;
+        double actualResult = 0.0625 /a;
         String message = "expected=" + expectedResult + " : Actual=" + actualResult;
         Assert.assertTrue(message, expectedResult == actualResult);
     }
