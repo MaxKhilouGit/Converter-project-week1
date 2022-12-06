@@ -3,12 +3,11 @@ import org.junit.Assert;
 import org.junit.jupiter.api.Test;
 import org.junit.runner.RunWith;
 
-import org.junit.jupiter.params.ParameterizedTest;
 import org.junit.runners.Parameterized;
 import sprint2.main.FahrenheitToCelsius;
 
 @RunWith(Parameterized.class)
-public class FahrToCelcius extends BaseTest {
+public class FahrToCelsius extends BaseTest {
     double a, expectedResult; //declared at Class level
 
     FahrenheitToCelsius ftoC = new FahrenheitToCelsius(a);
