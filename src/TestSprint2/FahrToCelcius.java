@@ -17,7 +17,7 @@ public class FahrToCelcius extends BaseTest {
     public void verifyPositiveTemp_Case1() {
         double expectedResult = 35.28;
         double a = 95.5;
-        double actualResult = ftoC.FToC(a); //using object and calling conversion method to get Actual Result; need to limit decimal place output
+        double actualResult = Double.parseDouble(ftoC.FToC(a)); //using object and calling conversion method to get Actual Result; need to limit decimal place output
         String message = "expected = " + expectedResult + " : Actual = " + actualResult;
         Assert.assertTrue(message, expectedResult == actualResult);
     }
@@ -25,15 +25,15 @@ public class FahrToCelcius extends BaseTest {
     public void verifyNegativeTemp_Case2() {
         double expectedResult = -37.5;
         double a = -35.5;
-        double actualResult = ftoC.FToC(a);
+        double actualResult = Double.parseDouble(ftoC.FToC(a)); //used Double.parseDouble to allow converted String for format purposes
         String message = "expected = " + expectedResult + " : Actual = " + actualResult;
         Assert.assertTrue(message, expectedResult == actualResult);
     }
     @Test
     public void verifyZeroDegreeTemp_Case3(){
-        double expectedResult = -17.77777777777778;
+        double expectedResult = -17.78;
         double a = 0;
-        double actualResult = ftoC.FToC(a);
+        double actualResult = Double.parseDouble(ftoC.FToC(a));
         String message = "expected = " + expectedResult + " : Actual = " + actualResult;
         Assert.assertTrue(message, expectedResult == actualResult);
     }
