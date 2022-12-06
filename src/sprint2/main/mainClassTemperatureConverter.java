@@ -1,10 +1,13 @@
 package sprint2.main;
 
+import java.text.DecimalFormat;
 import java.util.Scanner;
 
 public class mainClassTemperatureConverter {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
+        DecimalFormat df = new DecimalFormat("##.##");
+        String formatDouble;
         double Fahrenheit=0;
         int KelvinOrCelsius;
         int again = 0;
@@ -18,11 +21,13 @@ public class mainClassTemperatureConverter {
             switch (KelvinOrCelsius){
                 case 1:
                     FahrenheitToKelvin FK = new FahrenheitToKelvin(Fahrenheit);
-                    System.out.println(Fahrenheit +" Fahrenheit is equal to "+FK.result+" Kelvin");
+                    formatDouble = df.format(FK.result);
+                    System.out.println(Fahrenheit +" Fahrenheit is equal to "+formatDouble+" Celsius");
                     break;
                 case 2:
                     FahrenheitToCelsius FC = new FahrenheitToCelsius(Fahrenheit);
-                    System.out.println(Fahrenheit +" Fahrenheit is equal to "+FC.result+" Celsius");
+                    formatDouble = df.format(FC.result);
+                    System.out.println(Fahrenheit +" Fahrenheit is equal to "+formatDouble+" Celsius");
                     break;
             }
             System.out.println("Enter 1 to run program again: ");
