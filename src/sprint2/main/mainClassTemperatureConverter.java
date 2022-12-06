@@ -22,12 +22,12 @@ public class mainClassTemperatureConverter {
                 case 1:
                     FahrenheitToKelvin FK = new FahrenheitToKelvin(Fahrenheit);
                     formatDouble = df.format(FK.result);
-                    System.out.println(Fahrenheit +" Fahrenheit is equal to "+formatDouble+" Celsius");
+                    System.out.println(Fahrenheit +" Fahrenheit is equal to "+formatDouble+" Kelvin.");
                     break;
                 case 2:
                     FahrenheitToCelsius FC = new FahrenheitToCelsius(Fahrenheit);
                     formatDouble = df.format(FC.result);
-                    System.out.println(Fahrenheit +" Fahrenheit is equal to "+formatDouble+" Celsius");
+                    System.out.println(Fahrenheit +" Fahrenheit is equal to "+formatDouble+" Celsius.");
                     break;
             }
             System.out.println("Enter 1 to run program again: ");

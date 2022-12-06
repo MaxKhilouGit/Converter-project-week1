@@ -6,7 +6,7 @@ import org.junit.runner.RunWith;
 import org.junit.runners.Parameterized;
 import sprint2.main.FahrenheitToCelsius;
 
-@RunWith(Parameterized.class)
+//@RunWith(Parameterized.class)
 public class FahrToCelsius extends BaseTest {
     double a, expectedResult; //declared at Class level
 
@@ -18,7 +18,7 @@ public class FahrToCelsius extends BaseTest {
         double a = 95.5;
         double actualResult = Double.parseDouble(ftoC.FToC(a)); //using object and calling conversion method to get Actual Result; need to limit decimal place output
         String message = "expected = " + expectedResult + " : Actual = " + actualResult;
-        Assert.assertTrue(message, expectedResult == actualResult);
+        Assert.assertEquals(message, expectedResult, actualResult, 0.0);
     }
     @Test
     public void verifyNegativeTemp_Case2() {
